@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ===========================
+   Global Reset
+=========================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   Smooth Scrolling
+=========================== */
+
+html {
+  scroll-behavior: smooth;
+
+  /* Prevent fixed navbar from hiding section headings */
+  scroll-padding-top: 80px;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+  background: #050816;
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  color: #cbd5e1;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+ul {
+  list-style: none;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  scroll-margin-top: 80px;
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection {
+  background: #22d3ee;
+  color: #050816;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #22d3ee #050816;
+}
+
+/* ===========================
+   Utility Classes
+=========================== */
+
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  section {
+    min-height: auto;
+    padding: 90px 0;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}

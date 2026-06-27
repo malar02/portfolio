@@ -1,0 +1,133 @@
+.projects-section {
+  padding: 100px 8%;
+  background: #050816;
+  scroll-margin-top: 80px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.projects-subtitle {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #22d3ee;
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.25);
+}
+
+.project-card h3 {
+  color: #22d3ee;
+  font-size: 1.45rem;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #d1d5db;
+  line-height: 1.8;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tech-stack span {
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.tech-stack span:hover {
+  background: #22d3ee;
+  color: #050816;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.project-links a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.github-btn {
+  background: transparent;
+  color: #22d3ee;
+  border: 1px solid #22d3ee;
+}
+
+.github-btn:hover {
+  background: #22d3ee;
+  color: #050816;
+}
+
+.demo-btn {
+  background: #22d3ee;
+  color: #050816;
+}
+
+.demo-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 80px 6%;
+  }
+
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+}
