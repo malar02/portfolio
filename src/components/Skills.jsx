@@ -1,4 +1,4 @@
-import "./Skills.css";
+
 import { motion } from "framer-motion";
 
 const skillCategories = [
